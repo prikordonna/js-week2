@@ -1,4 +1,4 @@
-const users = {
+  const users = {
     1: {
       name: 'Roman',
       lastName: 'Lurov',
@@ -20,7 +20,6 @@ const users = {
         role: 'student'
       }
     },
-    
     4: {
       name: 'Oleg',
       lastName: 'Murko',
@@ -31,7 +30,7 @@ const users = {
     5: {
       name: 'Kurz',
       lastName: 'Smith'
-    }
+    },
   };
   
   Object.keys(users).forEach(function(key) {
@@ -39,8 +38,8 @@ const users = {
     
     if(user) {
        console.log('name: ', user.name);
-       console.log('last name: ', users.lastName);
+       console.log('last name: ', user.lastName);
        
-       console.log('role: ', user.otherData.role)
+       console.log('role: ', user.otherData.role);
     }
   })

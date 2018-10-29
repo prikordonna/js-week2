@@ -1,4 +1,4 @@
-// currency converter 
+//TASK 1.1 currency converter 
 
 let ua = 26;
 
@@ -15,17 +15,15 @@ function convertUsd (num) {
 }
 
 
-// min and max numbers
+//TASK 1.2  min and max numbers
 
-function minMax (num) {
-    const maxNum = Math.max(...num);
-    const minNum = Math.min(...num);
-    console.log("Max number is: " + maxNum);
-    console.log("Min number is: " + minNum);
-}
+const minMax = numbers => ({
+    max: Math.max(...numbers),
+    min: Math.min(...numbers),
+   });
 
 
-// Average number of values
+//TASK 1.3 Average number of values
 
 let arr = [54,44,22,48,67,3,7,-45];
 let sum = 0;
@@ -37,14 +35,18 @@ for (let i = 0; i < arr.length; i++) {
 console.log (average);
 
 
-// Recursion function that print numbers from 10 to 1
+//TASK 2. Recursion function that print numbers from 10 to 1
 
-for (let i = 10; i >= 1; i--) {
-    console.log(i);
+const recursion = (n) => {
+    if(n >= 0) {
+        console.log(n);
+        recursion(n-1);
+    }
 }
+recursion(10);
 
 
-//TASK 4
+//TASK 4   -------------------------
 
 for (var i=0; i < 8; i++) {
     console.log("#".repeat(i+1))

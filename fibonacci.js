@@ -1,8 +1,11 @@
 const n = Number(prompt('Type number of Fibonacci'));   
 function fib(n) {
- if( n <= 2){
-   return 1;
+  if( n <= 1)
+  return n;
+  return fib(n - 1) + fib(n - 2);
  }
+ 
+ function fibCycle (n) {
   let a = 1;
   let b = 1;
   let c= 0;
@@ -13,4 +16,5 @@ function fib(n) {
   }
   return c;
 }
-document.write( fib(n) ); 
+
+alert( fib(n) ); 
