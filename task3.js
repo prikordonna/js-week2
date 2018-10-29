@@ -36,10 +36,11 @@
   Object.keys(users).forEach(function(key) {
     const user = users[key];
     
-    if(user) {
+    if(user.hasOwnProperty('otherData')) {
        console.log('name: ', user.name);
        console.log('last name: ', user.lastName);
-       
        console.log('role: ', user.otherData.role);
+    } else {
+       console.log(null);
     }
-  })
+  });
